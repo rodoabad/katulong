@@ -2,10 +2,6 @@
   "name": "katulong",
   "version": "1.0.0",
   "description": "Collection of scripts to be used in your npm package",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rodoabad/katulong.git"
@@ -21,11 +17,26 @@
   },
   "config": {
     "ghooks": {
+      "pre-commit": "npm run test",
       "commit-msg": "validate-commit-msg"
     }
+  },
+  "dependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.11.1",
+    "eslint-config-rodoabad": "^1.4.0",
+    "shelljs": "^0.7.0",
+    "yargs": "^4.7.1"
   },
   "devDependencies": {
     "ghooks": "^1.2.1",
     "validate-commit-msg": "^2.6.1"
+  },
+  "bin": {
+    "katulong-lint": "bin/lint.js"
+  },
+  "scripts": {
+    "test": "eslint bin/**",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
