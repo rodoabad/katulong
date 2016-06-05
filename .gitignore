@@ -1,0 +1,8 @@
+.bundle
+.DS_STORE
+.idea
+npm-debug.log
+coverage
+dist
+node_modules
+*.swp

@@ -1,0 +1,31 @@
+{
+  "name": "katulong",
+  "version": "1.0.0",
+  "description": "Collection of scripts to be used in your npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodoabad/katulong.git"
+  },
+  "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/katulong/issues"
+  },
+  "homepage": "https://github.com/rodoabad/katulong#readme",
+  "engines": {
+    "node": ">=6.x"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "devDependencies": {
+    "ghooks": "^1.2.1",
+    "validate-commit-msg": "^2.6.1"
+  }
+}
