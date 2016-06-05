@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rodoabad/katulong.svg?branch=master)](https://travis-ci.org/rodoabad/katulong)
+
 # Katulong
 
 Katulong is a Tagalog word that means assistant and that's exactly what it does. Katulong assist you in keeping your projects organized so that you can focus on your development. 
@@ -16,7 +18,7 @@ Install `katulong` as a dev dependency for your project.
 // package.json
 {
   "scripts": {
-    "lint": "katulong-lint"
+    "lint": "katulong lint"
   }
 }
 ```

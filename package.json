@@ -33,10 +33,10 @@
     "validate-commit-msg": "^2.6.1"
   },
   "bin": {
-    "katulong-lint": "bin/lint.js"
+    "katulong": "bin/katulong.js"
   },
   "scripts": {
-    "test": "eslint bin/**",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "katulong lint"
   }
 }
