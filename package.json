@@ -37,6 +37,6 @@
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "katulong lint"
+    "test": "node bin/katulong.js lint"
   }
 }
