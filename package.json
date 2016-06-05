@@ -1,10 +1,9 @@
 {
   "name": "katulong",
-  "version": "1.0.0",
   "description": "Collection of scripts to be used in your npm package",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodoabad/katulong.git"
+    "url": "https://github.com/rodoabad/katulong.git"
   },
   "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
   "license": "MIT",
@@ -30,6 +29,7 @@
   },
   "devDependencies": {
     "ghooks": "^1.2.1",
+    "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.6.1"
   },
   "bin": {
