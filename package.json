@@ -1,6 +1,14 @@
 {
   "name": "katulong",
   "description": "Collection of scripts to be used in your npm package",
+  "keywords": [
+    "katulong",
+    "build",
+    "task",
+    "runner",
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rodoabad/katulong.git"
@@ -22,9 +30,13 @@
   },
   "dependencies": {
     "babel-eslint": "^6.0.4",
+    "code": "^3.0.0",
     "eslint": "^2.11.1",
     "eslint-config-rodoabad": "^1.4.0",
+    "mocha": "^2.5.3",
+    "mocha-clean": "^1.0.0",
     "shelljs": "^0.7.0",
+    "sinon": "^1.17.4",
     "yargs": "^4.7.1"
   },
   "devDependencies": {
@@ -36,7 +48,8 @@
     "katulong": "bin/katulong.js"
   },
   "scripts": {
+    "pkg:lint": "node bin/katulong.js lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "node bin/katulong.js lint"
+    "test": "npm run pkg:lint"
   }
 }

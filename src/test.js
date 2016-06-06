@@ -1,10 +1,7 @@
 const shell = require('shelljs');
 
 const directoriesToCheck = [
-    'bin',
-    'lib',
-    'src',
-    'test'
+    'test/unit'
 ].join(' ');
 
 const builder = {
@@ -15,11 +12,11 @@ const builder = {
 
 const handler = argv => {
 
-    shell.exec(`eslint ${argv.files}`);
+    shell.exec(`mocha ${argv.files}`);
 
 };
 
-exports.command = 'lint';
-exports.describe = 'lint your files';
+exports.command = 'test';
+exports.describe = 'run your package\'s unit tests';
 exports.builder = builder;
 exports.handler = handler;
