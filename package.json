@@ -29,10 +29,9 @@
     }
   },
   "dependencies": {
-    "babel-eslint": "^6.0.4",
     "code": "^3.0.0",
     "eslint": "^2.11.1",
-    "eslint-config-rodoabad": "^1.4.0",
+    "eslint-config-rodoabad": "^1.6.0",
     "mocha": "^2.5.3",
     "mocha-clean": "^1.0.0",
     "shelljs": "^0.7.0",

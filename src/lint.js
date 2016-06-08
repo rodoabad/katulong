@@ -1,6 +1,7 @@
 const shell = require('shelljs');
 
 const directoriesToCheck = [
+    '.',
     'bin',
     'lib',
     'src',
@@ -15,7 +16,7 @@ const builder = {
 
 const handler = argv => {
 
-    shell.exec(`eslint ${argv.files}`);
+    shell.exec(`eslint ${argv.files} --cache`);
 
 };
 

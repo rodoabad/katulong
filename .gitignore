@@ -1,5 +1,6 @@
-.bundle
 .DS_STORE
+.bundle
+.eslintcache
 .idea
 npm-debug.log
 coverage
