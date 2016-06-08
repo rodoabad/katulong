@@ -1,6 +1,6 @@
 {
   "name": "katulong",
-  "description": "Collection of scripts to be used in your npm package",
+  "description": "A collection of scripts to be used in an npm package to make tooling easier",
   "keywords": [
     "katulong",
     "build",
