@@ -13,6 +13,7 @@ const builder = {
 
 const handler = argv => {
 
+    shell.rm('-rf', `${utils.pkgPath}/coverage`);
     shell.exec(`${utils.binPath}/istanbul cover ${utils.nodeModulesPath}/mocha/bin/_mocha -- ${argv.files} --reporter min`);
     shell.exec(`${utils.binPath}/istanbul check-coverage --statement 100 --branch 100 --function 100 --line 100`);
 
