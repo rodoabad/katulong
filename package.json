@@ -6,6 +6,7 @@
     "build",
     "task",
     "runner",
+    "coverage",
     "lint",
     "test"
   ],
@@ -32,6 +33,7 @@
     "code": "3.0.0",
     "eslint": "2.11.1",
     "eslint-config-rodoabad": "1.7.0",
+    "istanbul": "0.4.3",
     "mocha": "2.5.3",
     "mocha-clean": "1.0.0",
     "shelljs": "0.7.0",

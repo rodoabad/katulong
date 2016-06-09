@@ -1,13 +1,14 @@
 #! /usr/bin/env node
-const yargs = require('yargs');
-
+const coverage = require('../src/coverage');
 const lint = require('../src/lint');
 const test = require('../src/test');
+const yargs = require('yargs');
 
 return yargs
     .usage('Usage: $0 --help')
     .strict()
     .example('$0 lint --files ./vendor', 'Lint files in the vendor directory')
+    .command(coverage)
     .command(lint)
     .command(test)
     .demand(1) // eslint-disable-line no-magic-numbers
