@@ -30,7 +30,7 @@
     }
   },
   "dependencies": {
-    "code": "3.0.0",
+    "code": "3.0.1",
     "eslint": "2.11.1",
     "eslint-config-rodoabad": "1.7.0",
     "istanbul": "0.4.3",
@@ -41,7 +41,7 @@
     "yargs": "4.7.1"
   },
   "devDependencies": {
-    "ghooks": "1.2.1",
+    "ghooks": "1.2.3",
     "semantic-release": "4.3.5",
     "validate-commit-msg": "2.6.1"
   },
