@@ -1,5 +1,5 @@
 const shell = require('shelljs');
-const utils = require('../utils');
+const utils = require('./utils');
 
 const directoriesToCheck = [
     'test/unit'
@@ -8,12 +8,15 @@ const directoriesToCheck = [
 const builder = {
     files: {
         default: directoriesToCheck
+    },
+    reporter: {
+        default: 'min'
     }
 };
 
 const handler = argv => {
 
-    shell.exec(`${utils.binPath}/mocha ${argv.files}`);
+    shell.exec(`${utils.binPath}/mocha ${argv.files} --reporter ${argv.reporter}`);
 
 };
 

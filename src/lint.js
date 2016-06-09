@@ -1,5 +1,5 @@
 const shell = require('shelljs');
-const utils = require('../utils');
+const utils = require('./utils');
 
 const directoriesToCheck = [
     '.',
@@ -17,7 +17,7 @@ const builder = {
 
 const handler = argv => {
 
-    shell.exec(`${utils.binPath}/eslint ${argv.files} --cache`);
+    shell.exec(`${utils.binPath}/eslint ${argv.files} --cache --ignore-pattern coverage`);
 
 };
 
