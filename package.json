@@ -50,6 +50,7 @@
   "bin": {
     "katulong": "bin/katulong.js"
   },
+  "main": "index.js",
   "scripts": {
     "pkg:lint": "node bin/katulong.js lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",

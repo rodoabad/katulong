@@ -1,7 +1,9 @@
 const WebpackDevServer = require('webpack-dev-server');
-const {config, host, port} = require('./webpack.config');
+const {host, port} = require('./webpack.config');
 const utils = require('../utils');
 const webpack = require('webpack');
+
+const config = `${utils.pkgPath}/webpack.config.js`;
 
 new WebpackDevServer(webpack(config), {
     contentBase: `${utils.pkgPath}/demo`,
