@@ -17,7 +17,7 @@ const builder = {
 
 const handler = argv => {
 
-    shell.exec(`${utils.binPath}/eslint ${argv.files} --cache --ignore-pattern coverage`);
+    shell.exec(`${utils.binPath}/eslint ${argv.files} --cache --ignore-pattern coverage node_modules`);
 
 };
 
