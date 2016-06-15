@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 const coverage = require('../src/coverage');
+const init = require('../src/init');
 const lint = require('../src/lint');
 const preview = require('../src/preview');
 const test = require('../src/test');
@@ -10,6 +11,7 @@ return yargs
     .strict()
     .example('$0 lint --files ./vendor', 'Lint files in the vendor directory')
     .command(coverage)
+    .command(init)
     .command(lint)
     .command(preview)
     .command(test)
