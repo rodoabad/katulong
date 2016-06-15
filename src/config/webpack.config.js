@@ -1,4 +1,3 @@
-const path = require('path');
 const utils = require('../utils');
 const webpack = require('webpack');
 
@@ -13,7 +12,7 @@ const config = {
         `${utils.pkgPath}/src/index.js`
     ],
     output: {
-        path: path.join(utils.pkgPath, 'demo'),
+        path: `${utils.pkgPath}/demo`,
         filename: 'preview.js'
     },
     plugins: [
@@ -21,6 +20,11 @@ const config = {
     ],
     module: {
         loaders: [
+            {
+                test: /\.js$/,
+                include: /src/,
+                loader: 'react-hot'
+            },
             {
                 test: /\.js$/,
                 include: /src/,
