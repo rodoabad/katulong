@@ -1,9 +1,9 @@
 #! /usr/bin/env node
-const coverage = require('../src/coverage');
-const init = require('../src/init');
-const lint = require('../src/lint');
-const preview = require('../src/preview');
-const test = require('../src/test');
+const coverage = require('../lib/coverage');
+const init = require('../lib/init');
+const lint = require('../lib/lint');
+const preview = require('../lib/preview');
+const test = require('../lib/test');
 const yargs = require('yargs');
 
 return yargs
