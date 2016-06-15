@@ -8,6 +8,7 @@
     "runner",
     "coverage",
     "lint",
+    "preview",
     "test"
   ],
   "repository": {
@@ -30,6 +31,9 @@
     }
   },
   "dependencies": {
+    "babel-core": "6.9.1",
+    "babel-loader": "6.2.4",
+    "babel-preset-react": "6.5.0",
     "code": "3.0.1",
     "eslint": "2.11.1",
     "eslint-config-rodoabad": "1.7.0",

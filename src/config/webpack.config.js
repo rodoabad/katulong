@@ -18,7 +18,25 @@ const config = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                include: /src/,
+                loader: 'babel',
+                query: {
+                    cacheDirectory: true,
+                    presets: [
+                        require.resolve('babel-preset-react')
+                    ]
+                }
+            }
+        ]
+    },
+    resolveLoader: {
+        root: `${utils.nodeModulesPath}`
+    }
 };
 
 module.exports = {
