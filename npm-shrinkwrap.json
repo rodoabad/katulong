@@ -341,6 +341,11 @@
       "from": "babel-plugin-transform-do-expressions@>=6.3.13 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-plugin-transform-do-expressions/-/babel-plugin-transform-do-expressions-6.8.0.tgz"
     },
+    "babel-plugin-transform-es2015-modules-commonjs": {
+      "version": "6.10.3",
+      "from": "babel-plugin-transform-es2015-modules-commonjs@latest",
+      "resolved": "https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs/-/babel-plugin-transform-es2015-modules-commonjs-6.10.3.tgz"
+    },
     "babel-plugin-transform-exponentiation-operator": {
       "version": "6.8.0",
       "from": "babel-plugin-transform-exponentiation-operator@>=6.3.13 <7.0.0",
@@ -385,6 +390,11 @@
       "version": "6.9.0",
       "from": "babel-plugin-transform-react-jsx-source@>=6.3.13 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-plugin-transform-react-jsx-source/-/babel-plugin-transform-react-jsx-source-6.9.0.tgz"
+    },
+    "babel-plugin-transform-strict-mode": {
+      "version": "6.11.3",
+      "from": "babel-plugin-transform-strict-mode@>=6.8.0 <7.0.0",
+      "resolved": "https://registry.npmjs.org/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-6.11.3.tgz"
     },
     "babel-preset-react": {
       "version": "6.11.1",
