@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+const bundle = require('../lib/bundle');
 const coverage = require('../lib/coverage');
 const init = require('../lib/init');
 const lint = require('../lib/lint');
@@ -10,6 +11,7 @@ return yargs
     .usage('Usage: $0 --help')
     .strict()
     .example('$0 lint --files ./vendor', 'Lint files in the vendor directory')
+    .command(bundle)
     .command(coverage)
     .command(init)
     .command(lint)
