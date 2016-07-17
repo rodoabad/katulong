@@ -1,8 +1,9 @@
-[![npm](https://img.shields.io/npm/v/katulong.svg?style=flat-square)](https://www.npmjs.com/package/katulong)
-[![Travis](https://img.shields.io/travis/rodoabad/katulong.svg?style=flat-square)](https://travis-ci.org/rodoabad/katulong)
-[![David](https://img.shields.io/david/rodoabad/katulong.svg?maxAge=2592000?style=flat-square)]()
-[![David](https://img.shields.io/david/dev/rodoabad/katulong.svg?maxAge=2592000?style=flat-square)]()
-[![David](https://img.shields.io/david/peer/rodoabad/katulong.svg?maxAge=2592000?style=flat-square)]()
+[![npm](https://img.shields.io/npm/v/katulong.svg)](https://www.npmjs.com/package/katulong)
+[![Travis](https://img.shields.io/travis/rodoabad/katulong.svg)](https://travis-ci.org/rodoabad/katulong)
+
+[![David](https://img.shields.io/david/rodoabad/katulong.svg?maxAge=2592000)]()
+[![David](https://img.shields.io/david/dev/rodoabad/katulong.svg?maxAge=2592000)]()
+[![David](https://img.shields.io/david/peer/rodoabad/katulong.svg?maxAge=2592000)]()
 
 # Katulong
 
