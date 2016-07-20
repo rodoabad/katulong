@@ -21,9 +21,33 @@ npm i katulong -D
 
 ## Features
 
+* bundle - bundle your JS file as `umd` with webpack
 * coverage - run your unit test and check for 100% coverage
 * linting - lint your files
+* preview - start up a webpack preview server
 * test - run your unit test
+
+## Directory Structure
+
+```
+.
+├── demo 
+├── lib
+├── src
+├── test
+│   ├── benchmark
+│   ├── integration
+│   ├── unit
+│   mocha.opts
+├── utils
+.editorconfig
+.eslintignore
+.eslintrc.js
+.npmrc
+.nvmrc
+webpack.config.js
+webpack.preview.js
+```
 
 ## Coverage
 
