@@ -55,6 +55,7 @@
     "sass-loader": "4.0.2",
     "shelljs": "0.7.4",
     "style-loader": "0.13.1",
+    "stylelint": "^7.5.0",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.2",
     "yargs": "6.3.0"
@@ -72,7 +73,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "pkg:lint": "node bin/katulong.js lint",
+    "pkg:lint": "node bin/katulong.js eslint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "npm run pkg:lint"
   }
