@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "chance": "^1.0.4",
-    "eslint-config-rodoabad": "1.12.0",
+    "eslint-config-rodoabad": "1.13.1",
     "ghooks": "1.3.2",
     "semantic-release": "4.3.5",
     "sinon": "1.17.6",
