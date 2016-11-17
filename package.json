@@ -74,7 +74,8 @@
   "main": "index.js",
   "scripts": {
     "pkg:eslint": "node bin/katulong.js eslint",
+    "pkg:test": "node bin/katulong.js test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run pkg:eslint"
+    "test": "npm run pkg:eslint && npm run pkg:test"
   }
 }
