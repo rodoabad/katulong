@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/rodoabad/katulong#readme",
   "engines": {
-    "node": ">=5.x"
+    "node": ">=5"
   },
   "config": {
     "ghooks": {
