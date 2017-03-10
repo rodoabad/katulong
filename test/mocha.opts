@@ -1,0 +1,5 @@
+--check-leaks
+--colors
+--recursive
+--reporter spec
+--require mocha-clean
