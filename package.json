@@ -52,7 +52,7 @@
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "pre-test": "eslint bin src test --cache",
+    "pretest": "eslint bin src test --cache",
     "test": "mocha ./test/unit"
   }
 }
