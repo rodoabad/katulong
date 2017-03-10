@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const path = require('path');
-const rc = require(path.resolve('.katulongrc'));
+const rc = require(path.resolve('../../.katulongrc'));
 const yargs = require('yargs');
 const pluginOptions = require('../src/plugin-options');
 const presetOptions = require('../src/preset-options');
