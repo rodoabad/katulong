@@ -13,61 +13,41 @@ A typical project will have tools for linting, running unit tests, building dist
 
 ## Installation
 
-Install `katulong` as a dev dependency for your project.
+First you need to install `katulong` as a dev dependency for your project.
 
 ```
 npm i katulong -D
 ```
 
-## Features
-
-* bundle - bundle your JS file as `umd` with webpack
-* coverage - run your unit test and check for 100% coverage
-* linting - lint your files
-* preview - start up a webpack preview server
-* test - run your unit test
-
-## Directory Structure
+You then need to install a Katulong preset or a plugin.
 
 ```
-.
-├── demo 
-├── lib
-├── src
-├── test
-│   ├── benchmark
-│   ├── integration
-│   ├── unit
-│   mocha.opts
-├── utils
-.editorconfig
-.eslintignore
-.eslintrc.js
-.npmrc
-.nvmrc
-webpack.config.js
-webpack.preview.js
+npm i katulong-preset-rodoabad
 ```
 
-## Coverage
+#### Setup
 
-Uses [Istanbul](https://github.com/gotwarlost/istanbul) to check unit test coverage. Command will fail it coverage goes less than 100%.
+Katulong needs a runtime configuration file in your package's root directory called `.katulongrc.js`. Using our example above, we should be loading the `rodoabad` preset.
 
-### Linting
+```javascript
+// .kattulongrc.js
+module.exports = {
+    presets: [
+        'rodoabad'
+    ]
+};
 
-Currently uses [ESLint](https://github.com/eslint/eslint) to lint your JS files using rules from [eslint-config-rodoabad](https://github.com/rodoabad/eslint-config-rodoabad).
+```
 
 #### Usage
+
+Now that you've properly installed and setup Katulong, it's time to use it.
 
 ```javascript
 // package.json
 {
   "scripts": {
-    "pkg:lint": "katulong lint"
+    "pkg:eslint": "katulong rodoabad eslint"
   }
 }
 ```
-
-#### Options
-
-* `--files` - directories to check when linting **default** `['.', 'bin', 'lib', 'src', 'test']`
