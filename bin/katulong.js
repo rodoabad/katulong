@@ -1,15 +1,18 @@
 #! /usr/bin/env node
-const path = require('path');
-const rc = require(path.resolve('.katulongrc'));
 const yargs = require('yargs');
 const pluginOptions = require('../src/plugin-options');
 const presetOptions = require('../src/preset-options');
 
+const path = require('path');
+
+const rcPath = path.resolve('.katulongrc');
+const rc = require(rcPath);
+
 const atLeastOneCommand = 1;
 
 const pathToUse = (rc && rc.path) ?
-                  rc.path :
-                  '../node_modules';
+                  path.resolve(rc.path) :
+                  path.resolve('node_modules');
 
 return yargs
     .commandDir(pathToUse, pluginOptions(rc.plugins))
