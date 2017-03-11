@@ -9,7 +9,15 @@
 
 > ### **n**. helper, assistant
 
-A typical project will have tools for linting, running unit tests, building distribution files, and many more. But what happens if you have similar packages that need the same set of tools? Katulong aims to solve this problem by providing a single source of build tools to share. Now you can focus more on developing instead of tooling and all your projects will have a consistent build structure.
+A typical project will have tools for linting, running unit tests, building distribution files, and many more. But what happens if you have similar packages that need the same set of tools? Katulong aims to solve this problem by providing a single source of build tools to share through the use of plugins and presets. Now you can focus more on developing instead of tooling and all your projects will have a consistent build structure.
+
+#### What are Katulong plugins?
+
+Katulong plugins is a single script that you'd like to share. The namespace format for a plugin is `katulong-plugin-<YOUR_PLUGIN_NAME>`.
+
+#### What are Katulong presets?
+
+Katulong presets are pretty much a bigger set of scripts that you'd like to share across projects. Typically presets include the following scripts—a linter, test runner, coverage, and a module bundler. The namespace format for a preset is `katulong-preset-<YOUR_PRESET_NAME>`.
 
 ## Installation
 
@@ -30,7 +38,7 @@ npm i katulong-preset-rodoabad
 Katulong needs a runtime configuration file in your package's root directory called `.katulongrc.js`. Using our example above, we should be loading the `rodoabad` preset.
 
 ```javascript
-// .kattulongrc.js
+// .katulongrc.js
 module.exports = {
     presets: [
         'rodoabad'

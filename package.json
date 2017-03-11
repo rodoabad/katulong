@@ -31,20 +31,20 @@
     }
   },
   "dependencies": {
-    "code": "4.0.0",
-    "eslint": "3.8.1",
-    "mocha": "3.1.2",
-    "mocha-clean": "1.0.0",
-    "shelljs": "0.7.4",
-    "yargs": "6.3.0"
+    "code": "^4.0.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2",
+    "mocha-clean": "^1.0.0",
+    "shelljs": "^0.7.4",
+    "yargs": "^6.3.0"
   },
   "devDependencies": {
-    "chance": "1.0.4",
-    "eslint-config-rodoabad": "1.13.1",
-    "ghooks": "1.3.2",
-    "semantic-release": "4.3.5",
-    "sinon": "1.17.6",
-    "validate-commit-msg": "2.8.2"
+    "chance": "^1.0.4",
+    "eslint-config-rodoabad": "^1.13.1",
+    "ghooks": "^1.3.2",
+    "semantic-release": "^4.3.5",
+    "sinon": "^1.17.6",
+    "validate-commit-msg": "^2.8.2"
   },
   "bin": {
     "katulong": "bin/katulong.js"
