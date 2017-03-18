@@ -71,7 +71,7 @@ A typical project will have several development dependencies for linting, runnin
 }
 ```
 
-It can be daunting enough to manage all of these in a single project so you can imagine what happens if you have similar projects that need the same set of tools i.e. multiple repositories for your shareable React components? You will then have to copy and paste the necessary development dependencies making sure that versions are correct and consistent across all of these projects.
+It can be daunting to manage all of these in a single project so you can imagine what happens if you have similar projects that need the same set of tools i.e. multiple repositories for your shareable React components? You will then have to copy and paste the necessary development dependencies making sure that versions are correct and consistent across all of these projects.
 
 Katulong aims to solve this problem by providing a single source of build tools to share through the use of plugins and presets. Now you can focus more on developing instead of tooling and all your projects will have a consistent build structure. You update your plugin or preset for Katulong and every single one of your project that uses Katulong will update accordingly. There is no longer a need to maintain your development dependencies in multiple projects.
 
