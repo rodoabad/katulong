@@ -1,7 +1,7 @@
 {
   "name": "katulong",
   "version": "0.0.0-development",
-  "description": "A collection of scripts to be used in an npm package to make tooling easier",
+  "description": "A npm script runner to make tooling easier between projects",
   "keywords": [
     "katulong",
     "build",
