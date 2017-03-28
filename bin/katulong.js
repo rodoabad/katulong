@@ -19,6 +19,7 @@ return yargs
     .commandDir(pathToUse, presetOptions(rc.presets))
     .strict()
     .usage('Usage: $0 --help')
+    .alias('h', 'help')
+    .help('help')
     .demand(atLeastOneCommand)
-    .help()
     .argv;
