@@ -34,7 +34,7 @@ describe('Given the yargs `commandDir` options object for katulong presets', () 
 
     it('should look for subdirectories', () => {
 
-        expect(presetOptions().recurse).false();
+        expect(presetOptions().recurse).true();
 
     });
 
